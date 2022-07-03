@@ -1,4 +1,13 @@
 {
+  "name": "cypress-example-framework",
+  "version": "1.0.0",
+  "description": "A simple framework demonstrating Cypress' capabilities with UI and API testing",
+  "main": "index.js",
+  "repository": "https://github.com/vlad8891/cypress-example-framework.git",
+  "author": "vlad.opris88@gmail.com",
+  "license": "MIT",
+  "private": false,
+
   "dependencies": {
     "cypress": "^10.3.0"
   },
