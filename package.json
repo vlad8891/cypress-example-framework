@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "cypress": "^10.3.0"
+  },
+  "scripts": {
+    "clean": "rm -rf node_modules && yarn",
+    "setup": "setup.sh"
+  }
+}
