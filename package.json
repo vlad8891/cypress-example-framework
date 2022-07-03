@@ -14,6 +14,6 @@
   "scripts": {
     "clean": "rm -rf node_modules && yarn",
     "setup": "setup.sh",
-    "test": "yarn cypress run --browser chrome"
+    "test": "yarn cypress run --record --key ac727834-8cc8-4e00-a10a-7dbf7d5d3a85"
   }
 }
