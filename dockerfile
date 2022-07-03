@@ -4,5 +4,7 @@ WORKDIR /app
 
 COPY ./cypress ./cypress
 COPY ./cypress.config.js ./cypress.config.js
+COPY ./package.json ./package.json
 
-RUN yarn cypress run --browser -chrome
+RUN yarn clean
+RUN yarn test
