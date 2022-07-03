@@ -14,23 +14,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: "${{ steps.nvm.outputs.NVMRC }}"
-          cache: "yarn"
-          cache-dependency-path: "yarn.lock"
-
       - name: Installing dependencies
-        working-directory: ./
         run: yarn
 
       - name: Cypress info
         run: yarn cypress info
-        working-directory: ./
 
       - name: Start running automated tests...
-        working-directory: ./
         run: yarn cypress run --record --key ac727834-8cc8-4e00-a10a-7dbf7d5d3a85
 
       - name: Uploading screenshots...
