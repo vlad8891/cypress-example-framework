@@ -13,7 +13,6 @@ describe("Api tests", () => {
     let employeesOver30 = [];
     let newEmployeesOver30 = [];
 
-    cy.wait(5000);
     cy.request(`${url}/employees`).then((response) => {
       expect(response.status).to.eql(200);
       employees = response.body.data;
@@ -24,7 +23,6 @@ describe("Api tests", () => {
       }
       cy.log(`Number of employees over 30 is ${employeesOver30.length}.`);
     });
-    cy.wait(5000);
     cy.request({
       url: `${url}/create`,
       method: "POST",
@@ -41,7 +39,6 @@ describe("Api tests", () => {
       response.body.data.name = newEmployeeName;
       response.body.data.salary = newSalary;
       response.body.data.age = newAge;
-      cy.wait(5000);
       cy.request({
         url: `${url}/update/${response.body.data.id}`,
         method: "PUT",
@@ -52,7 +49,6 @@ describe("Api tests", () => {
         expect(response.body.data.data.salary).to.eql(newSalary);
         expect(response.body.data.data.age).to.eql(newAge);
       });
-      cy.wait(5000);
       cy.request(`${url}/employees`).then((response) => {
         employees = response.body.data;
         for (let i = 0; i < employees.length; i++) {
@@ -60,7 +56,7 @@ describe("Api tests", () => {
             newEmployeesOver30.push(employees[i]);
           }
         }
-        cy.log(`Number of employees over 30 is ${employeesOver30.length}.`);
+        cy.log(`Number of employees over 30 is ${newEmployeesOver30.length}.`);
         expect(newEmployeesOver30.length).to.eql(employeesOver30.length + 1);
       });
       cy.request({
