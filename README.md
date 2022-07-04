@@ -44,7 +44,7 @@ Summary of command line arguments:
 ### Running inside a Docker container
 
 ```
-$ docker build -t cypress-example-framework:1.0.0 .
+docker build -t cypress-example-framework:1.0.0 .
 ```
 
 ### Running within a Yarn package
