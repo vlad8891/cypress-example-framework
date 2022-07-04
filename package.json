@@ -1,6 +1,6 @@
 {
   "name": "cypress-example-framework",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple framework demonstrating Cypress' capabilities with UI and API testing",
   "main": "index.js",
   "repository": "https://github.com/vlad8891/cypress-example-framework.git",
@@ -14,6 +14,6 @@
   "scripts": {
     "clean": "rm -rf node_modules && yarn",
     "setup": "setup.sh",
-    "test": "yarn cypress run --record --key ac727834-8cc8-4e00-a10a-7dbf7d5d3a85 --browser -chrome"
+    "test": "yarn cypress run --record --key ac727834-8cc8-4e00-a10a-7dbf7d5d3a85 --browser chrome"
   }
 }
