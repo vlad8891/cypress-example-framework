@@ -21,7 +21,7 @@ jobs:
         run: yarn cypress info
 
       - name: Start running automated tests...
-        run: yarn cypress run --record --key ac727834-8cc8-4e00-a10a-7dbf7d5d3a85 --browser -chrome
+        run: yarn test
 
       - name: Uploading screenshots...
         if: always()
