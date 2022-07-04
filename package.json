@@ -1,6 +1,6 @@
 {
   "name": "cypress-example-framework",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple framework demonstrating Cypress' capabilities with UI and API testing",
   "main": "index.js",
   "repository": "https://github.com/vlad8891/cypress-example-framework.git",
