@@ -2,7 +2,7 @@
 
 A simple framework demonstrating Cypress' capabilities with UI and API testing.
 
-# Getting started Mac OS
+# Getting started 
 
 ### 💼 Prerequisites
 
